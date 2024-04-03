@@ -1,0 +1,33 @@
+<h1>Listado de Usuarios</h1>
+<h2>Mujeres</h2>
+{{#if usuariosPorSexo.female}}
+  <ul class='productos'>
+    {{#each usuariosPorSexo.female}}
+      <li>Nombre:
+        {{nombre}}
+        - Apellido:
+        {{apellido}}
+        - ID:
+        {{id}}
+        - Timestamp:
+        {{timestamp}}</li>
+    {{/each}}
+  </ul>
+{{/if}}
+
+<h2>Hombres</h2>
+{{#if usuariosPorSexo.male}}
+  <ul class='productos'>
+    {{#each usuariosPorSexo.male}}
+      <li>Nombre:
+        {{nombre}}
+        - Apellido:
+        {{apellido}}
+        - ID:
+        {{id}}
+        - Timestamp:
+        {{timestamp}}</li>
+
+    {{/each}}
+  </ul>
+{{/if}}
